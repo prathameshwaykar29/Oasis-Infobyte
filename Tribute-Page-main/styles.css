@@ -1,0 +1,294 @@
+body {
+    background-color: #000;
+    height: 95vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: 'Switzer', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+*::selection {
+    background-color: #dfdf89;
+    color: black;
+}
+
+svg {
+    color: tomato;
+    height: 30px;
+    width: 20px;
+}
+
+.yellow-color {
+    background-color: #dfdf89;
+    color: black;
+}
+
+.yellow-color::selection {
+    background-color: fuchsia;
+}
+
+.blue-color {
+    background-color: #70A7D8;
+    color: black;
+}
+
+.blue-color::selection {
+    background-color: #e5383b;
+}
+
+.red-color {
+    background-color: #e5383b;
+    color: black;
+}
+
+.red-color::selection {
+    background-color: #70A7D8;
+}
+
+.golden-color {
+    background-color: #89753C;
+    color: black;
+}
+
+.golden-color::selection {
+    background-color: slateblue;
+}
+
+.green-color {
+    background-color: green;
+    color: black;
+}
+
+.green-color::selection {
+    background-color: #89753C;
+}
+
+.date {
+    color: tomato;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Clash Display', sans-serif;
+}
+
+/**titles**/
+
+#title {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: transparent;
+    background: url('images/background.jpg') center/cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+    transition: all .6s ease-in-out;
+}
+
+#title-2 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: transparent;
+    background: url('images/introduction-background.jpg') center/cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#title-3 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: transparent;
+    background: url('images/timeline-background.jpg') center/cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#title-4 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: transparent;
+    background: url('images/gallery-background.jpg') center/cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#title-5 {
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    color: transparent;
+    background: url('images/connect-background.png') center/cover no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    margin: 20px;
+    margin-top: 30px;
+    : 0;
+}
+
+/**img-div**/
+
+.img-div {
+    text-align: center;
+    padding: 20px;
+}
+
+/**image**/
+
+#image {
+    width: 90%;
+    max-width: 100%;
+    margin: 30px auto;
+    display: block;
+    border-radius: 30px;
+}
+
+/**image-caption**/
+
+#img-caption {
+    margin-top: 30px;
+    color: #dfdf89;
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 301;
+}
+
+/**Javier**/
+
+a#tribute-link {
+    text-decoration: none;
+    color: #dfdfdf;
+}
+
+/**Divider**/
+
+#divider {
+    background-color: #dfdf89;
+    width: 80%;
+    margin: 0 auto;
+    height: 3.5px;
+}
+
+/**Tribute-info**/
+
+#tribute-info {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: black;
+    width: 90%;
+    max-width: 100%;
+    margin: 30px auto;
+    display: none;
+    font-weight: 600;
+}
+
+/**Timeline**/
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.05);
+}
+
+#timeline {
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+/**gallery**/
+#gallery {
+    width: auto;
+    margin: 10px auto;
+    columns: 4;
+    column-gap: 20px;
+    display: none;
+}
+
+/**box**/
+
+.box {
+    width: 100%;
+    margin-bottom: 10px;
+    break-inside: avoid;
+}
+
+/**gallery-image**/
+
+#gallery .box img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+@media(max-width: 1200px) {
+    #gallery {
+        width: calc(100% - 40px);
+        columns: 3;
+    }
+}
+
+@media(max-width: 768px) {
+    #gallery {
+        columns: 2;
+    }
+}
+
+@media(max-width: 480px) {
+    #gallery {
+        columns: 1;
+    }
+}
+
+/**Connect**/
+
+#connect {
+    text-align: center;
+    display: none;
+}
+
+/**Connect-logo**/
+
+.connect-logo {
+    margin-top: 20px;
+    width: 80px;
+    color: #dfdf89;
+}
+
+/**Copyright**/
+
+.copyright {
+    text-align: center;
+    font-family: 'Clash Display', sans-serif;
+    font-weight: 400;
+    color: #dfdf89;
+    margin-top: 30px;
+}
